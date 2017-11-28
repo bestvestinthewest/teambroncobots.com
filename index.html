@@ -26,45 +26,45 @@ slides:
 
 
 
-works:
+sections:
   - image: images/home/Robots.jpg
     title: Our Robots
-    link_to: portfolio-item.html
+    link_to: robots.html
     klass: graphi-design
     desc: Design &amp; Development
   - image: images/home/OurTeam.jpg
     title: About Us
-    link_to: portfolio-item.html
+    link_to: about-broncobots.html
     klass: graphi-design
     desc: About Team 1987
   - image: images/home/GKCCheer.jpg
     title: Our Awards
-    link_to: portfolio-item.html
+    link_to: awards.html
     klass: graphi-design
     desc: Through Eleven Seasons
   - image: images/home/AboutFIRST.jpg
     title: FIRST Robotics
-    link_to: portfolio-item.html
+    link_to: first.html
     klass: graphi-design
     desc: FIRST
   - image: images/home/Sponsors.jpg
     title: Our Sponsors
-    link_to: portfolio-item.html
+    link_to: sponsors.html
     klass: graphi-design
     desc: Thank You!
   - image: images/home/SummerCamps.jpg
     title: Summer Camps
-    link_to: portfolio-item.html
+    link_to: camps.html
     klass: graphi-design
     desc: Inspiring Young Engineers
   - image: images/home/Media.jpg
     title: Media
-    link_to: portfolio-item.html
+    link_to: media.html
     klass: graphi-design
     desc: Pictures and Videos
   - image: images/home/Resources.jpg
     title: Resources
-    link_to: portfolio-item.html
+    link_to: resources.html
     klass: graphi-design
     desc: Helpful Information
 
@@ -188,14 +188,14 @@ milestones:
 
   <div class="mod modGallery">
     <ul class="gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-      {% for work in page.works %}
-      <li class="{{ work.klass }}">
-        <a href='{{ work.link_to }}'>
-          <img alt="" src="{{ work.image }}" />
+      {% for section in page.sections %}
+      <li class="{{ section.klass }}">
+        <a href='{{ section.link_to }}'>
+          <img alt="" src="{{ section.image }}" />
           <div class='overlay'>
             <div class='thumb-info'>
-              <h3>{{ work.title }}</h3>
-              <p>{{ work.desc }}</p>
+              <h3>{{ section.title }}</h3>
+              <p>{{ section.desc }}</p>
             </div>
           </div>
         </a>
